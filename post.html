@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Post – Hong Ha LE</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700&family=DM+Sans:wght@400;500&family=DM+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --bg: #f7f5f0;
+            --text: #2c2c3a;
+            --accent: #c8773a;
+            --serif: 'Playfair Display', Georgia, serif;
+            --sans: 'DM Sans', sans-serif;
+            --mono: 'DM Mono', monospace;
+        }
+
+        body {
+            font-family: var(--sans);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 40px 20px;
+        }
+
+        .post-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Typography matching your personal brand */
+        #content h1 {
+            font-family: var(--serif);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        #content h2 {
+            font-family: var(--serif);
+            margin-top: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        #content p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            color: #3d3d4f;
+        }
+
+        #content code {
+            font-family: var(--mono);
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        #content pre {
+            background: #1a1a2e;
+            color: #e8e4da;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 30px;
+            color: var(--accent);
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Ensure LaTeX math blocks don't cause horizontal scrolling */
+        .MathJax {
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    </style>
+    <link rel="icon" type="image/jpeg" href="images/avatar.jpg">
+</head>
+
+<body>
+
+    <div class="post-container">
+        <a href="index.html#blog" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Blog</a>
+        <div id="content">Loading post...</div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const postName = urlParams.get('post');
+
+        if (postName) {
+            // Fetch from 'blogs/' folder visible in your directory
+            fetch(`blogs/${postName}.md`)
+                .then(response => {
+                    if (!response.ok) throw new Error('Post not found');
+                    return response.text();
+                })
+                .then(markdown => {
+                    // Parse Markdown to HTML
+                    document.getElementById('content').innerHTML = marked.parse(markdown);
+
+                    // Re-trigger MathJax to process LaTeX in the loaded Markdown
+                    if (window.MathJax) {
+                        MathJax.typesetPromise();
+                    }
+
+                    // Format title (e.g., 'coursework' -> 'Coursework')
+                    const titleStr = postName.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+                    document.title = `${titleStr} – Hong Ha LE`;
+                })
+                .catch(err => {
+                    console.error(err);
+                    document.getElementById('content').innerHTML = `
+                    <h1>Post Not Found</h1>
+                `;
+                });
+        }
+    </script>
+</body>
+
+</html>

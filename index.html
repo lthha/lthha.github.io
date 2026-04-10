@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Ha Le</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/jpeg" href="images/avatar.jpg">
+</head>
+
+<body>
+
+  <!-- Mobile menu button -->
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">
+    <i class="fa fa-bars"></i> Menu
+  </button>
+
+  <!-- ── SIDEBAR ──────────────────────────────────────────── -->
+  <aside id="sidebar">
+    <div class="sidebar-top">
+      <div class="avatar-wrap">
+        <!-- Replace src with your photo, or remove img for the placeholder icon -->
+        <img src="images/avatar.jpg" alt="Hong Ha LE">
+        <div class="avatar-placeholder"><i class="fa-solid fa-user"></i></div>
+      </div>
+      <div class="sidebar-name">Hong Ha LE</div>
+      <div class="sidebar-role">
+        Ph.D. Student<br>
+        <a href="https://nus.edu.sg" target="_blank">National University of Singapore</a>
+      </div>
+      <div class="sidebar-links">
+        <a href="mailto:hongha@u.nus.edu"><i class="fa-regular fa-envelope"></i> Email </a>
+        <a href="https://scholar.google.com/citations?user=NXaNcBgAAAAJ&hl=en" target="_blank"><i
+            class="fa-solid fa-graduation-cap"></i> Google Scholar</a>
+        <a href="https://www.linkedin.com/in/hale30/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>
+          LinkedIn</a>
+        <a href="https://github.com/lthha" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="resume.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> Resume / CV</a>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#news" class="nav-link">News</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <!-- <li><a href="#research" class="nav-link">Research</a></li> -->
+        <!-- <li><a href="#blog" class="nav-link">Blog</a></li> -->
+        <li><a href="#teaching" class="nav-link">Teaching</a></li>
+        <!-- <li><a href="#misc" class="nav-link">Misc</a></li> -->
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      &copy; <span id="year"></span> Hong Ha LE. All rights reserved.
+    </div>
+  </aside>
+
+  <!-- ── MAIN ─────────────────────────────────────────────── -->
+  <main id="main">
+
+    <!-- HOME -->
+    <section class="section" id="home">
+      <div class="fade-in">
+        <div class="section-meta">Nice to meet you!</div>
+        <h2 class="section-title">Biography</h2>
+      </div>
+
+      <p class="bio-text fade-in">
+        <strong>Hong Ha LE</strong> is a Ph.D. Student in the <a href="https://www.stat.nus.edu.sg/">Department of
+          Statistics and Data Science</a>
+        at <a href="https://nus.edu.sg">National University of Singapore</a>, advised by <a
+          href="https://sites.google.com/view/yanshuotan/">Prof. Yan Shuo Tan</a>.
+        <!-- Her research focuses on In-context Learning. -->
+        Before this, she obtained her B.Sc. in Applied Mathematics and Computer Science at <a
+          href="https://fulbright.edu.vn/">Fulbright University Vietnam</a>.
+      </p>
+
+      <div class="edu-cards fade-in">
+        <div class="edu-card">
+          <img class="edu-logo" style="object-fit: contain; background: transparent;"
+            src="images/nus_logo_full-horizontal.jpg" alt="NUS">
+          <div class="edu-info">
+            <h4>National University of Singapore</h4>
+            <p>Ph.D. in Department of Statistics and Data Science</p>
+          </div>
+          <span class="edu-badge">2025 – Present</span>
+        </div>
+        <div class="edu-card">
+          <img class="edu-logo" style="object-fit: contain; background: transparent;" src="images/fulbright_logo.webp"
+            alt="Fulbright">
+          <div class="edu-info">
+            <h4>Fulbright University Vietnam, Ho Chi Minh City, Vietnam</h4>
+            <p>Bachelor of Science in Applied Mathematics and Computer Science</p>
+          </div>
+          <span class="edu-badge">2021 – 2025</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="section" id="news">
+      <div class="fade-in">
+        <div class="section-meta">Something Exciting to Share</div>
+        <h2 class="section-title">News</h2>
+      </div>
+
+      <ul class="news-list">
+        <li class="news-item fade-in">
+          <span class="news-date">Jan 2026</span>
+          <span class="news-text"><a href="https://openreview.net/pdf?id=cpwbXHvd2h">One paper</a> accepted to
+            <strong>ICLR 2026</strong>.</span>
+        </li>
+        <li class="news-item fade-in">
+          <span class="news-date">Aug 2025</span>
+          <span class="news-text">Joining NUS as a Ph.D. Student in the Department of Statistics and Data
+            Science.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section" id="publications">
+      <div class="fade-in">
+        <div class="section-meta">Publication</div>
+        <h2 class="section-title">Selected Publications</h2>
+      </div>
+
+      <div class="scholar-note fade-in">
+        <i class="fa-solid fa-graduation-cap"></i>
+        Check out my <a href="https://scholar.google.com/citations?user=NXaNcBgAAAAJ&hl=en" target="_blank">Google
+          Scholar</a> for the most up-to-date list of publications.
+      </div>
+
+      <div class="pub-list">
+
+        <div class="pub-item fade-in">
+          <div class="pub-thumb">
+            <img src="images/publications/FACET.png" alt="FACET">
+          </div>
+          <div class="pub-body">
+            <div class="pub-title">FACET: A Fragment-Aware Conformer Ensemble Transformer</div>
+            <div class="pub-authors">Duy Nguyen, Trung Nguyen, <strong>Ha Le</strong>, et.al.</div>
+            <div class="pub-venue">The Fourteenth International Conference on Learning Representations, 2026.</div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://openreview.net/pdf?id=cpwbXHvd2h" target="_blank">[Paper]</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="fade-in">
+        <div class="section-meta">Experience</div>
+        <h2 class="section-title">Working Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="tl-header">
+            <div class="tl-company"><a href="https://nus.edu.sg/" target="_blank">National University of
+                Singapore</a></div>
+            <span class="tl-date">Jan 2026 – Present</span>
+          </div>
+          <div class="tl-role">Graduate Teaching Assistant</div>
+          <div class="tl-desc">ST2334: Probability and Statistics</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="tl-header">
+            <div class="tl-company"><a href="https://www.dfki.de/en" target="_blank">German Research Center for
+                Artificial Intelligence (DFKI)</a></div>
+            <span class="tl-date">Dec 2024 – June 2025</span>
+          </div>
+          <div class="tl-role">Research Intern</div>
+          <div class="tl-desc">Worked on Drug Discovery project using Graph Transformers.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="tl-header">
+            <div class="tl-company"><a href="https://athena.studio/" target="_blank">Athena Studio, Ho Chi Minh City,
+                Vietnam</a></div>
+            <span class="tl-date">Aug 2024 – June 2025</span>
+          </div>
+          <div class="tl-role">Quantitative Researcher</div>
+          <div class="tl-desc">Developed trading alphas and pipeline.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="tl-header">
+            <div class="tl-company"><a href="https://fulbright.edu.vn/" target="_blank">Fulbright University Vietnam</a>
+            </div>
+            <span class="tl-date">Sep 2022 – Dec 2023</span>
+          </div>
+          <div class="tl-role">Teaching Assistant</div>
+          <div class="tl-desc">CS104: Introduction to Computer Science, MATH308: Statistical Learning, MATH105:
+            Introduction to Data Analysis, MATH101: Calculus</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESEARCH (commented out)
+    <section class="section" id="research">
+      <div class="fade-in">
+        <div class="section-meta">Research Activities</div>
+        <h2 class="section-title">On-going Projects</h2>
+      </div>
+
+      <div class="project-cards">
+
+        <div class="proj-card fade-in">
+          <div class="proj-img">
+            🔬
+          </div>
+          <div class="proj-body">
+            <div class="proj-title">Project Title One <a href="#" target="_blank">[Project Page]</a></div>
+            <p class="proj-meta"><strong>Your Name</strong> leads the AI/ML component of this project.</p>
+            <p class="proj-pi"><em>PI:</em> Prof. Advisor Name. <em>Collaborators:</em> Name A, Name B.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="services-section fade-in">
+        <h3>Services</h3>
+      </div>
+    </section>
+    -->
+
+    <!-- BLOG (commented out)
+    <section class="section" id="blog">
+      <div class="fade-in">
+        <div class="section-meta">Thoughts & Writing</div>
+        <h2 class="section-title">Blog</h2>
+      </div>
+
+      <div class="blog-grid">
+
+        <article class="blog-card fade-in">
+          <div class="blog-card-top">
+            <span class="blog-tag">Research</span>
+            <span class="blog-date">Mar 2026</span>
+          </div>
+          <h3 class="blog-title">
+            <a href="post.html?post=coursework">Empirical Transfer Bounds in ICL</a>
+          </h3>
+          <p class="blog-excerpt">
+            A short 1–2 sentence summary of what this post is about. Keep it punchy so readers want to click through.
+          </p>
+          <a class="blog-read-more" href="post.html?post=coursework">Read more →</a>
+        </article>
+
+      </div>
+    </section>
+    -->
+
+    <!-- ── TEACHING ──────────────────────────────────────── -->
+    <section class="section" id="teaching">
+      <div class="fade-in">
+        <div class="section-meta">Mentorship & Instruction</div>
+        <h2 class="section-title">Teaching</h2>
+      </div>
+
+      <div class="services-section fade-in">
+        <h3>National University of Singapore</h3>
+        <ul class="service-list" style="margin-bottom: 24px;">
+          <li><b>ST2334:</b> Probability and Statistics</li>
+        </ul>
+
+        <h3>Fulbright University Vietnam</h3>
+        <ul class="service-list">
+          <li><b>CS104:</b> Introduction to Computer Science</li>
+          <li><b>MATH308:</b> Statistical Learning</li>
+          <li><b>MATH105:</b> Introduction to Data Analysis</li>
+          <li><b>MATH101:</b> Calculus</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--
+    <section class="section" id="misc">
+      <div class="fade-in">
+        <div class="section-meta">About Me & Memorable Moments</div>
+        <h2 class="section-title">Miscellaneous</h2>
+      </div>
+
+      <div class="misc-grid">
+        <div class="misc-card fade-in">
+          <div class="misc-card-placeholder">🏆</div>
+          <div class="misc-card-body">
+            <div class="misc-card-title">Award Name – Institution</div>
+            <div class="misc-card-date">April 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse-panels fade-in">
+        <div class="cpanel" id="cp-news">
+          <div class="cpanel-header" onclick="togglePanel('cp-news')">
+            In the News
+            <i class="fa fa-chevron-down cpanel-chevron"></i>
+          </div>
+          <div class="cpanel-body">
+            <div class="cpanel-inner">
+              <ol>
+                <li><a href="#" target="_blank">News article title – Source, Year</a></li>
+                <li><a href="#" target="_blank">Another news feature or interview</a></li>
+                <li><a href="#" target="_blank">Press coverage or media appearance</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="cpanel" id="cp-achiev">
+          <div class="cpanel-header" onclick="togglePanel('cp-achiev')">
+            Undergraduate Achievements
+            <i class="fa fa-chevron-down cpanel-chevron"></i>
+          </div>
+          <div class="cpanel-body">
+            <div class="cpanel-inner">
+              <ol>
+                <li>Regional Winner in [Field] – <a href="#" target="_blank">Award Program Name</a></li>
+                <li>First prize in [Competition Name], Year</li>
+                <li>Third prize in <a href="#" target="_blank">Challenge Name</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="cpanel" id="cp-about">
+          <div class="cpanel-header" onclick="togglePanel('cp-about')">
+            About Me
+            <i class="fa fa-chevron-down cpanel-chevron"></i>
+          </div>
+          <div class="cpanel-body">
+            <div class="cpanel-inner">
+              <ul>
+                <li>I was born in <a href="#" target="_blank">City, Country</a>. [A fun personal fact or link!]</li>
+                <li>In my free time I enjoy [hobby 1], [hobby 2], and [hobby 3].</li>
+                <li>Favorite quote: <em>"Quote that inspires you."</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="visitors-map-wrap fade-in">
+        <div class="visitors-map-label">🌏 Visitors around the world</div>
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=YOUR_MAP_ID&cl=ffffff&w=a"></script>
+        <noscript>
+          <a href="https://clustrmaps.com" title="Visitor Map">
+            <img src="//clustrmaps.com/map_v2.png?d=YOUR_MAP_ID" alt="Visitor Map" style="width:100%;border-radius:12px;" />
+          </a>
+        </noscript>
+      </div>
+    </section>
+    -->
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
