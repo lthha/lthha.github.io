@@ -4,7 +4,7 @@ This repository contains the source code for my personal academic portfolio webs
 
 ## Features
 
-- **Multi-page Layout:** Home (About, News, Selected Publications, Experience) plus Publications, Talks and Teaching pages, all sharing the same sticky sidebar.
+- **Multi-page Layout:** Home (About, News, Selected Publications) plus Publications, Talks and Teaching pages, all sharing the same sticky sidebar.
 - **Dynamic Blog System:** Markdown files (in `/blogs`) are automatically fetched and rendered directly in the browser via `post.html` using [Marked.js](https://marked.js.org/). 
 - **Math Support:** Full LaTeX support for blog posts via [MathJax](https://www.mathjax.org/).
 - **No Build Tools Required:** Pure front-end stack without Node.js or bundlers.
@@ -13,7 +13,7 @@ This repository contains the source code for my personal academic portfolio webs
 
 ```text
 portfolio/
-├── index.html               ← Home: About, News, Selected Publications, Experience
+├── index.html               ← Home: About, News, Selected Publications
 ├── publications.html        ← Full publication list
 ├── talks.html               ← Talks
 ├── teaching.html            ← Teaching

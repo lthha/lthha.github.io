@@ -270,17 +270,24 @@ a:hover {
   transform: translateY(-2px);
 }
 
+/* Full horizontal logo in a white tile: same box for every school so text lines up */
 .edu-logo {
-  width: 52px;
-  height: 52px;
-  border-radius: 8px;
-  background: #d0e8f2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 150px;
+  height: 68px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  object-fit: contain;
   flex-shrink: 0;
-  font-size: 1.4rem;
-  color: var(--accent2);
+}
+
+@media (max-width: 768px) {
+  .edu-logo {
+    width: 110px;
+    height: 52px;
+    padding: 6px 8px;
+  }
 }
 
 .edu-info h4 {
