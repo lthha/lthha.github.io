@@ -137,7 +137,8 @@ a:hover {
   text-align: left;
 }
 
-.sidebar-links a {
+.sidebar-links a,
+.sidebar-links span {
   color: #b0bec5;
   font-size: 0.78rem;
   display: flex;
@@ -984,6 +985,35 @@ a:hover {
   .misc-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* ── MULTI-PAGE ─────────────────────────────────────── */
+/* A page with a single section fills the viewport height */
+.section:only-child {
+  min-height: 100vh;
+}
+
+#talks {
+  background: var(--surface);
+}
+
+.more-link {
+  display: inline-block;
+  margin-top: 28px;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.pub-group-title {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 8px 0 18px;
+}
+
+.pub-list + .pub-group-title {
+  margin-top: 40px;
 }
 
 /* ── UTILITY ────────────────────────────────────────── */

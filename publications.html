@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications – Ha Le</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/jpeg" href="images/avatar.jpg">
+</head>
+
+<body>
+
+  <!-- Mobile menu button -->
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">
+    <i class="fa fa-bars"></i> Menu
+  </button>
+
+  <!-- ── SIDEBAR ──────────────────────────────────────────── -->
+  <aside id="sidebar">
+    <div class="sidebar-top">
+      <div class="avatar-wrap">
+        <!-- Replace src with your photo, or remove img for the placeholder icon -->
+        <img src="images/avatar.jpg" alt="Hong Ha LE">
+        <div class="avatar-placeholder"><i class="fa-solid fa-user"></i></div>
+      </div>
+      <div class="sidebar-name">Hong Ha LE</div>
+      <div class="sidebar-role">
+        Ph.D. Student<br>
+        <a href="https://nus.edu.sg" target="_blank">National University of Singapore</a>
+      </div>
+      <div class="sidebar-links">
+        <span><i class="fa-solid fa-location-dot"></i> Singapore</span>
+        <a href="mailto:hongha@u.nus.edu"><i class="fa-regular fa-envelope"></i> Email </a>
+        <a href="https://scholar.google.com/citations?user=NXaNcBgAAAAJ&hl=en" target="_blank"><i
+            class="fa-solid fa-graduation-cap"></i> Google Scholar</a>
+        <a href="https://www.linkedin.com/in/hale30/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>
+          LinkedIn</a>
+        <a href="https://github.com/lthha" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="cv/cv.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> Resume / CV</a>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="publications.html" class="nav-link">Publications</a></li>
+        <li><a href="talks.html" class="nav-link">Talks</a></li>
+        <li><a href="experience.html" class="nav-link">Experience</a></li>
+        <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+        <li><a href="cv/cv.pdf" class="nav-link" target="_blank">CV</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      &copy; <span id="year"></span> Hong Ha LE. All rights reserved.
+    </div>
+  </aside>
+
+  <!-- ── MAIN ─────────────────────────────────────────────── -->
+  <main id="main">
+
+    <section class="section" id="publications">
+      <div class="fade-in">
+        <h2 class="section-title">Publications</h2>
+      </div>
+
+      <div class="scholar-note fade-in">
+        <i class="fa-solid fa-graduation-cap"></i>
+        Check out my <a href="https://scholar.google.com/citations?user=NXaNcBgAAAAJ&hl=en" target="_blank">Google
+          Scholar</a> for the most up-to-date list of publications.
+      </div>
+
+      <h3 class="pub-group-title fade-in">Preprints</h3>
+      <div class="pub-list">
+        <div class="pub-item fade-in">
+          <div class="pub-thumb">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+          <div class="pub-body">
+            <div class="pub-title">Learning Decision-Stump Thresholds in Context: Dynamics of Softmax Attention</div>
+            <div class="pub-authors"><strong>Hong Ha Le</strong>, Jackie Lok, Atsushi Nitanda, Yan Shuo Tan</div>
+            <div class="pub-venue">arXiv preprint arXiv:2610.07074, 2026.</div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/2610.07074" target="_blank">[arXiv]</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pub-group-title fade-in">Conference Papers</h3>
+      <div class="pub-list">
+        <div class="pub-item fade-in">
+          <div class="pub-thumb">
+            <img src="images/publications/FACET.png" alt="FACET">
+          </div>
+          <div class="pub-body">
+            <div class="pub-title">FACET: A Fragment-Aware Conformer Ensemble Transformer</div>
+            <div class="pub-authors">Duy Minh Ho Nguyen, Trung Quoc Nguyen, <strong>Ha Thi Hong Le</strong>, Mai Thanh
+              Nhat Truong, TrungTin Nguyen, Nhat Ho, Khoa D Doan, Duy Duong-Tran, Li Shen, Daniel Sonntag et al.</div>
+            <div class="pub-venue">The Fourteenth International Conference on Learning Representations, 2026.</div>
+            <div class="pub-links">
+              <a class="pub-link" href="https://openreview.net/pdf?id=cpwbXHvd2h" target="_blank">[Paper]</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -17,29 +17,11 @@
       document.getElementById(id).classList.toggle('open');
     }
 
-    // ── Scroll spy for nav active state ──────────────────
-    const sections = document.querySelectorAll('section.section');
+    // ── Highlight the nav link for the current page ──────
     const navLinks = document.querySelectorAll('.nav-link');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navLinks.forEach(l => l.classList.remove('active'));
-          const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
-          if (active) active.classList.add('active');
-        }
-      });
-    }, { rootMargin: '-40% 0px -55% 0px' });
-
-    sections.forEach(s => observer.observe(s));
-
-    // Catch the bottom of the page for the last section (Misc)
-    window.addEventListener('scroll', () => {
-      if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight - 2) {
-        navLinks.forEach(l => l.classList.remove('active'));
-        const active = document.querySelector('.nav-link[href="#misc"]');
-        if (active) active.classList.add('active');
-      }
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) link.classList.add('active');
     });
 
     // ── Scroll fade-in ────────────────────────────────────

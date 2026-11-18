@@ -1,0 +1,134 @@
+%-------------------------------------------------------------------------------
+% Academic CV — Hong Ha LE
+% Compile: latexmk -pdf cv.tex   (or pdflatex cv.tex)
+%-------------------------------------------------------------------------------
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2cm,top=1.6cm,bottom=1.6cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{linkblue}{RGB}{30,50,150}
+\hypersetup{colorlinks=true,urlcolor=linkblue,linkcolor=linkblue}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\raggedbottom
+
+% Section headings: large small caps with a full-width rule underneath
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\vspace{0.1ex}\titlerule]
+\titlespacing*{\section}{0pt}{2.4ex}{1.6ex}
+
+% Compact bullet lists flush with the left margin
+\setlist[itemize]{leftmargin=1.2em,label=\textbullet,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt}
+
+% \entry{Institution}{Location}{Line 2 (left)}{Dates (right)}
+\newcommand{\entry}[4]{%
+  \textbf{#1}\hfill #2\\
+  #3\hfill #4\par
+}
+\newcommand{\entrygap}{\vspace{1.2ex}}
+\newcommand{\me}[1]{\textbf{#1}}   % highlight own name in author lists
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+%---------------------------------- Header ------------------------------------
+\begin{center}
+  {\LARGE\bfseries Hong Ha Le}\\[0.8ex]
+  \href{https://lthha.github.io}{\faGlobe\ lthha.github.io}
+  \quad$|$\quad
+  \href{mailto:hongha@u.nus.edu}{\faEnvelope\ hongha@u.nus.edu}
+  \quad$|$\quad
+  \href{https://scholar.google.com/citations?user=NXaNcBgAAAAJ&hl=en}{\faGraduationCap\ Google Scholar}
+  \quad$|$\quad
+  \href{https://github.com/lthha}{\faGithub\ lthha}
+\end{center}
+\vspace{-1ex}
+
+%---------------------------- Research interests ------------------------------
+\section{Research interests}
+\begin{itemize}
+  \item In-context learning for tabular data  % TODO: edit / add your interests
+  \item Amortized statistical inference
+\end{itemize}
+
+%-------------------------------- Education -----------------------------------
+\section{Education}
+\entry{National University of Singapore}{Singapore}
+      {Ph.D. in \textbf{Statistics and Data Science}}{08/2025 -- Present}
+Advisor: Yan Shuo Tan
+\entrygap
+
+\entry{Fulbright University Vietnam}{Ho Chi Minh City, Vietnam}
+      {B.Sc. in \textbf{Applied Mathematics} and B.Sc. in \textbf{Computer Science}}{2021 -- 2025}
+% GPA: x.xx/4.00
+
+%--------------------------------- Papers -------------------------------------
+\section{Papers}
+\begin{itemize}
+  \item \me{Le, H. H.}, Lok, J., Nitanda, A., and Tan, Y. S. (2026).
+        Learning decision-stump thresholds in context: Dynamics of softmax attention.
+        \textit{arXiv preprint} \href{https://arxiv.org/abs/2610.07074}{\textit{arXiv:2610.07074}}.
+  \item Nguyen, D. M. H., Nguyen, T. Q., \me{Le, H. H.}, Truong, M. T. N.,
+        Nguyen, T., Ho, N., Doan, K. D., Duong-Tran, D., Shen, L., Sonntag, D.,
+        et al. (2026). FACET: A fragment-aware conformer ensemble transformer.
+        \textit{International Conference on Learning Representations (ICLR)}.
+        \href{https://openreview.net/pdf?id=cpwbXHvd2h}{[Paper]}.
+\end{itemize}
+
+%-------------------------------- Experience ----------------------------------
+\section{Research experience}
+\entry{German Research Center for Artificial Intelligence (DFKI)}{Germany}
+      {\textit{Research Intern}}{12/2024 -- 06/2025}
+\begin{itemize}
+  \item Drug discovery with graph transformers.
+\end{itemize}
+\entrygap
+
+\entry{VinBigData}{Hanoi, Vietnam}
+      {\textit{Research Trainee}}{07/2024 -- 12/2024}
+\begin{itemize}
+  \item Application Driven Mathematics Program, focusing on machine learning and data science.
+\end{itemize}
+
+% \entry{Athena Studio}{Ho Chi Minh City, Vietnam}
+%       {\textit{Quantitative Researcher}}{08/2024 -- 06/2025}
+% \begin{itemize}
+%   \item Developed trading alphas and research pipeline.
+% \end{itemize}
+
+%--------------------------------- Awards -------------------------------------
+% \section{Awards}
+% \begin{itemize}
+%   \item Award name, Institution, Year
+% \end{itemize}
+
+%--------------------------------- Talks --------------------------------------
+\section{Talks}
+\begin{itemize}
+  \item Short talk, \textit{FIM-IMS Joint Workshop on Mathematics of Data Science}, November 2026, Singapore
+\end{itemize}
+
+%-------------------------------- Teaching ------------------------------------
+\section{Teaching}
+\textit{Teaching assistant, National University of Singapore}
+\begin{itemize}
+  \item ST2334: Probability and Statistics (Spring 2026, Fall 2026)
+\end{itemize}
+\vspace{1ex}
+
+\textit{Teaching assistant, Fulbright University Vietnam}
+\begin{itemize}
+  \item MATH308: Statistical Learning
+  \item MATH105: Introduction to Data Analysis
+  \item MATH101: Calculus
+  \item CS104: Introduction to Computer Science
+\end{itemize}
+
+\end{document}
